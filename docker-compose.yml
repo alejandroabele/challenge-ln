@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  retail-front:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - PORT=${PORT}
+        - APP_ENV=${APP_ENV}
+    ports:
+      - "${PORT}:3000"
+    volumes:
+      - .:/${VOLUME_NAME}
+      - /${VOLUME_NAME}/node_modules
