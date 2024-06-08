@@ -1,8 +1,7 @@
 import { fetchBff } from '@/utils/fetch'
 async function fetchArticles() {
     try {
-        const res = await fetchBff(`/articles`)
-        return res
+        return await fetchBff(`/articles`)
     } catch (error) {
         throw error
     }

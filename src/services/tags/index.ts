@@ -2,8 +2,7 @@ import { fetchBff } from '@/utils/fetch'
 
 async function fetchTags() {
     try {
-        const res = await fetchBff("/tags")
-        return res
+        return await fetchBff("/tags")
     } catch (error) {
         throw error
     }
