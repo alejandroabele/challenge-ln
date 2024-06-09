@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  bff-test:
+    build:
+      context: ./bff
+      dockerfile: Dockerfile
+    volumes:
+      - .:/code
+    command: npm test
+
+  front-test:
+    build:
+      context: ./front
+      dockerfile: Dockerfile
+    volumes:
+      - .:/code
+    command: npm test
