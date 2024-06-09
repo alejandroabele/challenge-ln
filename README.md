@@ -46,7 +46,7 @@ La API Node (BFF) recibe la solicitud del servidor de Next.js y consulta un serv
 - **Backend**: Node.js, Express
 - **Pruebas Unitarias**: Jest, React Testing Library
 - **Patrón BFF (Backend for Frontend):** Permite desacoplar la lógica de obtención de datos de la capa de presentación. 
-- **Patrón Repository:** Utilizado en el bff para aislar la lógica de negocio de la lógica de obtención de datos.
+- **Patrón Repository:** Utilizado en el BFF para aislar la lógica de negocio de la lógica de obtención de datos.
 - **Convenciones de Nomenclatura**:
   - **Nombres de Archivos**: Kebab case
   - **Nombres de Componentes**: Pascal case
@@ -108,7 +108,9 @@ Para ejecutar este proyecto en tu entorno local, sigue estos pasos:
 Esto iniciará tanto el backend (en el puerto 8080) como el frontend (en el puerto 3000). La aplicación estará disponible en http://localhost:3000.
 
 # Ejecución de Pruebas
-Los tests unitarios se ejecutan automáticamente cuando se levanta el entorno con docker compose up. Se utilizan Jest y React Testing Library para los tests unitarios del frontend.
+- Los tests unitarios se ejecutan automáticamente cuando se levanta el entorno con docker compose up.
+- Se utiliza React Testing Library para las pruebas unitarias del frontend.
+- Se utiliza Jest para probar las funciones de transformación de datos en el BFF.
 
 # Autor
 
