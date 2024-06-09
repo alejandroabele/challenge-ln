@@ -108,9 +108,17 @@ Para ejecutar este proyecto en tu entorno local, sigue estos pasos:
 Esto iniciará tanto el backend (en el puerto 8080) como el frontend (en el puerto 3000). La aplicación estará disponible en http://localhost:3000.
 
 # Ejecución de Pruebas
-- Los tests unitarios se ejecutan automáticamente cuando se levanta el entorno con docker compose up.
-- Se utiliza React Testing Library para las pruebas unitarias del frontend.
-- Se utiliza Jest para probar las funciones de transformación de datos en el BFF.
+Puedes ejecutar los tests unitarios de la aplicación utilizando Docker Compose. A continuación, se detallan los pasos para construir y ejecutar los tests:
+
+1. Ejecuta el comando para construir las imágenes de Docker
+```sh
+docker-compose -f docker-compose-test.yml build
+```
+2. Iniciar los servicios con Docker Compose
+```sh
+docker-compose -f docker-compose-test.yml up
+```
+Este comando levantará los contenedores definidos en el archivo docker-compose-test.yml y ejecutará los tests dentro de ellos. Verás la salida de los tests en la consola.
 
 # Autor
 
