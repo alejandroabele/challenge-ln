@@ -2,10 +2,7 @@ FROM node:18-alpine
 WORKDIR /app
 COPY package*.json .
 COPY . .
-ARG PORT
-ARG APP_ENV
-EXPOSE $PORT
+EXPOSE 3000
 RUN npm install 
-RUN if [ "$APP_ENV" != "development" ] ; then npm run build ; fi
-ENV ENVIROMENT ${APP_ENV}
-CMD if [ "$ENVIROMENT" == "development" ] ; then npm run dev ; else npm run start ; fi
+RUN npm run build
+CMD ["npm", "run", "start"]
