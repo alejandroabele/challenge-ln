@@ -1,6 +1,6 @@
-const { prepareArticles } = require('../helpers/prepareArticles');
-const { prepareTags } = require('../helpers/prepareTags');
-const { formatDate } = require('../utils/formatDate');
+const { prepareArticles } = require('../helpers/prepare-articles');
+const { prepareTags } = require('../helpers/prepare-tags');
+const { formatDate } = require('../utils/format-date');
 
 
 describe('prepareTags', () => {
