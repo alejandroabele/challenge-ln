@@ -1,14 +1,14 @@
 # Challenge
 
 ## Tabla de contenidos
-- [Descripcion](#descripcion)
+- [Descripción](#descripción)
 - [Arquitectura](#arquitectura)
 - [Requerimientos](#requerimientos)
 - [Instalación](#instalación)
 - [Estructura y Organización del Proyecto](#estructura-y-organización-del-proyecto)
 - [Autor](#autor)
 
-## Descripcion
+## Descripción
 Este proyecto consiste en una aplicación desarrollada con Next.js para visualizar artículos. La aplicación se apoya en una API construida con Express y Node.js, que sigue el patrón de diseño BFF (Backend for Frontend). Esta API se encarga de obtener los datos de un servicio externo y procesarlos antes de enviarlos al frontend.
 
 Este diseño arquitectónico permite escalar y desacoplar la lógica de la obtención de los datos de la capa de presentación, facilitando el mantenimiento y la evolución del sistema. Además, promueve una mayor flexibilidad al poder modificar cada capa de manera independiente.
