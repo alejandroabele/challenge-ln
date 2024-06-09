@@ -6,6 +6,7 @@
 - [Requerimientos](#requerimientos)
 - [Instalación](#instalación)
 - [Estructura y Organización del Proyecto](#estructura-y-organización-del-proyecto)
+- [Ejecución de Pruebas](#ejecución-de-pruebas)
 - [Autor](#autor)
 
 ## Descripción
@@ -38,11 +39,14 @@ La API Node (BFF) recibe la solicitud del servidor de Next.js y consulta un serv
 **Desventajas:**
 - Gestión de Repositorios: Al dividir la aplicación en dos repositorios distintos (Frontend y BFF), se pueden requerir procesos de despliegue diferentes, lo que añade complejidad.
 - Costo de Infraestructura: Mantener infraestructura separada para el servidor de Next.js y la API de Express puede resultar más costoso en términos de recursos y mantenimiento.
-## Tecnologías Utilizadas 
+- 
+## Tecnologías Utilizadas y Practicas de Desarrollo
 
 - **Frontend**: Next.js, React
 - **Backend**: Node.js, Express
 - **Pruebas Unitarias**: Jest, React Testing Library
+- **Patrón BFF (Backend for Frontend):** Permite desacoplar la lógica de obtención de datos de la capa de presentación. 
+- **Patrón Repository:** Utilizado en el bff para aislar la lógica de negocio de la lógica de obtención de datos.
 - **Convenciones de Nomenclatura**:
   - **Nombres de Archivos**: Kebab case
   - **Nombres de Componentes**: Pascal case
@@ -102,6 +106,9 @@ Para ejecutar este proyecto en tu entorno local, sigue estos pasos:
    docker compose up
    ```
 Esto iniciará tanto el backend (en el puerto 8080) como el frontend (en el puerto 3000). La aplicación estará disponible en http://localhost:3000.
+
+# Ejecución de Pruebas
+Los tests unitarios se ejecutan automáticamente cuando se levanta el entorno con docker compose up. Se utilizan Jest y React Testing Library para los tests unitarios del frontend.
 
 # Autor
 
