@@ -67,6 +67,8 @@ El proyecto se organiza como un monorepo, con la siguiente estructura en la raí
 │   ├── src  
 │   │   ├── app  
 │   │   ├── components  
+│   │   │   ├── ui  
+│   │   │   └── ...  
 │   │   ├── helpers  
 │   │   └── ...  
 │   ├── public  
