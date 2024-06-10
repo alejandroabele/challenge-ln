@@ -14,7 +14,7 @@ Este proyecto consiste en una aplicación desarrollada con Next.js para visualiz
 
 Este diseño arquitectónico permite escalar y desacoplar la lógica de la obtención de los datos de la capa de presentación, facilitando el mantenimiento y la escalabilidad del sistema. Además, permite una mayor flexibilidad al poder modificar cada capa de manera independiente.
 
-La aplicación se puede encontrar en el siguiente enlace: [Challenge-ln](https://front-alejandroabele-alejandroabeles-projects.vercel.app/)
+La aplicación se puede encontrar en el siguiente enlace: [Challenge-ln](https://front-three-sand.vercel.app/)
 
 ## Arquitectura
 
