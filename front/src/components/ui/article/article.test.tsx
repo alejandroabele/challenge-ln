@@ -8,7 +8,6 @@ describe("Article", () => {
     const mockArticle: IArticle = {
         headlines: "Sample Headline",
         date: "26 de Enero de Diciembre",
-        // Agrega otros campos necesarios según tu interfaz IArticle
     };
     it('Should render the Article component with correct headline text', () => {
         const { getByText } = render(<Article article={mockArticle} />);
