@@ -39,7 +39,7 @@ La API Node (BFF) recibe la solicitud del servidor de Next.js y consulta un serv
 **Desventajas:**
 - Gestión de Repositorios: Al dividir la aplicación en dos repositorios distintos (Frontend y BFF), se pueden requerir procesos de despliegue diferentes, lo que agrega complejidad de mantenimiento.
 - Costo de Infraestructura: Mantener infraestructura separada para el servidor de Next.js y la API de Express puede resultar más costoso en términos de recursos y mantenimiento.
-- 
+
 ## Tecnologías Utilizadas y Practicas de Desarrollo
 
 - **Frontend**: Next.js, React
