@@ -60,30 +60,29 @@ Para ejecutar este proyecto, necesitas tener instalado lo siguiente:
 
 ## Estructura y Organización del Proyecto
 
-El proyecto se organiza como un monorepo, con la siguiente estructura en la raíz del directorio:
+El proyecto es un monorepo que contiene dos subproyectos principales: front y bff:
 
-/challenge-ln  
-├── front  
-│   ├── src  
-│   │   ├── app  
-│   │   ├── components  
-│   │   │   ├── ui  
-│   │   │   └── ...  
-│   │   ├── helpers  
-│   │   └── ...  
-│   ├── public  
-│   ├── Dockerfile  
-│   ├── package.json  
-│   └── ...  
-├── bff  
-│   ├── src  
-│   │   ├── controllers  
-│   │   ├── routes  
-│   │   └── services  
-│   ├── Dockerfile  
-│   ├── package.json  
-│   └── ...  
-└── docker-compose.yml  
+Frontend (front)
+- **src/app:** Contiene la el router de la aplicación.
+- **src/components:** Contiene los componentes de la aplicación.
+- **src/components/ui:** Contiene los componentes visuales de la aplicación.
+- **src/helpers:** Contiene funciones auxiliares.
+- **src/services:** Contiene los servicios que interactúan con APIs.
+- **src/interfaces:** Contiene definiciones de interfaces TypeScript.
+- **src/utils:** Contiene funciones utilitarias.
+- **Dockerfile:** Archivo de configuración para construir la imagen Docker del frontend.
+
+
+Backend (bff)
+- **src/controllers:** Contiene los controladores que manejan las solicitudes HTTP.
+- **src/helpers:** Contiene funciones auxiliares.
+- **src/repositories:** Contiene los repositorios que gestionan la persistencia y recuperación de datos.
+- **src/routes:** Define las rutas de la API y asigna las solicitudes a sus correspondientes controladores.
+- **src/services:** Contiene la lógica de negocio.
+- **src/test:** Contiene los tests unitarios.
+- **src/utils:** Contiene funciones utilitarias.
+- **Dockerfile:** Archivo de configuración para construir la imagen Docker del BFF.
+
 
 ## Instalación
 
