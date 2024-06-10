@@ -1,13 +1,12 @@
 import { ArticlesList } from '@/components/ui/articles-list/articles-list'
 import React from 'react'
-import { fetchArticles } from '@/hooks/useArticles'
+import { useArticles } from '@/hooks/useArticles'
 type ArticlesProps = {
 }
 const Articles = async ({ }: ArticlesProps) => {
-    const articles = await fetchArticles()
-
+    const { data } = await useArticles()
     return (
-        <ArticlesList data={articles} />
+        <ArticlesList data={data} />
     )
 }
 

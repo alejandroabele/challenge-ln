@@ -1,13 +1,5 @@
-import { fetchArticles as fetchArticlesService } from '@/services/articles'
-const fetchArticles = async () => {
-    try {
-        const response = await fetchArticlesService();
-        return response?.payload
-    } catch (error) {
-        throw error;
-    }
+import { fetchArticles } from '@/services/articles'
+export const useArticles = async () => {
+    const response = await fetchArticles();
+    return { data: response?.payload || [] }
 };
-
-export {
-    fetchArticles
-}
