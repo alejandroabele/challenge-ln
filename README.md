@@ -60,7 +60,7 @@ Para ejecutar este proyecto, necesitas tener instalado lo siguiente:
 
 ## Estructura y Organización del Proyecto
 
-El proyecto es un monorepo que contiene dos subproyectos principales: front y bff:
+El proyecto se estructura como un monorepo que contiene dos proyectos: front y bff:
 
 Frontend (front)
 - **src/app:** Contiene la el router de la aplicación.
