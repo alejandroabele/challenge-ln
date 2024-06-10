@@ -34,7 +34,7 @@ La API Node (BFF) recibe la solicitud del servidor de Next.js y consulta un serv
 - Modificabilidad: Facilita la modificación y evolución del sistema, ya que se puede modificar como se obtienen los datos sin modificar la capa de presentación.
 - Seguridad: Delegar la lógica de autenticación a servicios externos o un API Gateway en una capa distinta a la de presentación mejora la seguridad del sistema.
 - Rendimiento: Al procesar la información del lado del servidor, se puede mejorar la velocidad de carga de la aplicación y reducir la carga en el cliente.
-- Desacoplamiento: La creación de una capa de BFF resulta en una arquitectura desacoplada, lo que facilita el mantenimiento y la escalabilidad del sistema.
+- Desacoplamiento: La creación de una capa de BFF resulta en una arquitectura desacoplada, lo que facilita el mantenimiento y reutilizacion de componentes, en otras palabras el BFF podria ser utilizado por otros frontends.
 
 **Desventajas:**
 - Gestión de Repositorios: Al dividir la aplicación en dos repositorios distintos (Frontend y BFF), se pueden requerir procesos de despliegue diferentes, lo que agrega complejidad de mantenimiento.
