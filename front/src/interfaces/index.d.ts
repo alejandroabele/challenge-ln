@@ -6,6 +6,7 @@ interface ITag {
 interface IArticle {
     date: string;
     headlines: string;
+    image: string;
 }
 
 export {

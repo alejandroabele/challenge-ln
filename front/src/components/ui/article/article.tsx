@@ -5,13 +5,12 @@ import { ArticleImage } from '@/components/ui/article-image/article-image'
 import { ArticleContent } from '@/components/ui/article-content/article-content'
 import { ArticleDate } from '@/components/ui/article-date/article-date'
 import { ArticleText } from '@/components/ui/article-text/article-text';
-import { getDefaultImageSRC } from '@/helpers/image-src'
 
 type ArticleProps = {
     article: IArticle
 }
 const Article = ({ article }: ArticleProps) => {
-    const src = getDefaultImageSRC()
+    const src = article.image
     return (
         <ArticleContent>
             <ArticleImage src={src} />

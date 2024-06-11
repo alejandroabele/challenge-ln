@@ -13,6 +13,7 @@ const _normalizeArticles = (filteredArticles) => {
         return {
             date: formatDate(article.display_date),
             headlines: article.headlines.basic,
+            image: article.promo_items.basic.url
         }
     })
 }
